@@ -20,11 +20,11 @@ Test set score :  0.9605263157894737
 (memo 入力データの性質(9割方、退職しない)上うまく分類できなくとも0.9以上の値をとってしまう)
 
 各成分の重要度が出力できるのでプロットすると  
-![勾配ブースティング](png/GradBoost.PNG)  
+![勾配ブースティング](png/GradBoost.png)  
 図から engagement と OT.huor が重要だと見て取れる。
 
 engagement と OT.huor　を横軸、縦軸にとってプロットすると
-![test](png/test.PNG)  
+![test](png/test.png)  
 図から OT.hour が高く、 engagement が低いと退職している傾向が見える。
 
 
@@ -35,17 +35,17 @@ engagement と OT.huor　を横軸、縦軸にとってプロットすると
 Training score :  1.0  
 Test set score :  0.9671052631578947  
 重要度の分布  
-![DecTree](png/DecTree.PNG)
+![DecTree](png/DecTree.png)  
 勾配ブースティングと同様に、engagement と OT.huor が重要だと見て取れる。  
 生成された木構造  
-![DecTree](png/DecTree2.PNG)
+![DecTree](png/DecTree2.PNG)  
 
 
 ###### ランダムフォレスト  
 Training score :  0.9912280701754386  
 Test set score :  0.9342105263157895  
 重要度の分布  
-![RandForest](png/RandForest.PNG)  
+![RandForest](png/RandForest.png)  
 勾配ブースティングと同様に、engagement と OT.huor が重要だと見て取れる。
 
 ###### ニューラルネットワーク  
@@ -53,7 +53,7 @@ Test set score :  0.9342105263157895
 Training score :  1.0  
 Test set score :  0.9868421052631579  
 隠れ層の1層目をプロット  
-![MPL](png/MPL.PNG)  
+![MPL](png/MPL.png)  
 engagement , OT.hour , manager.social.intelligence の係数が特に高い。  
 (この分布だけを見て、何が重要かを判断することはできないと思う)
 
@@ -61,7 +61,7 @@ engagement , OT.hour , manager.social.intelligence の係数が特に高い。
 Training score :  1.0  
 Test set score :  0.9868421052631579  
 係数の分布  
-![Logistic](png/Logistic.PNG)  
+![Logistic](png/Logistic.png)  
 切片は、 -0.92347549  
 入力データは全て正のため、 OT.hour、manager.social.intelligence が大きいと退職しやすく、 engagement が大きいと退職しにくいと見て取れる。  
 (退職するを 1 , 退職しないを 0 で学習している)
