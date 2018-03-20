@@ -24,7 +24,7 @@ Test set score :  0.9605263157894737
 図から engagement と OT.huor が重要だと見て取れる。
 
 engagement と OT.huor　を横軸、縦軸にとってプロットすると  
-![test](png/test.png)  
+![test](png/test1.png)  
 図から OT.hour が高く、 engagement が低いと退職している傾向が見える。
 
 
